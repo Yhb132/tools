@@ -39,7 +39,7 @@ public class BeanCopyUtil {
      * @return
      */
     public static <T> List<T> convertList(List srcList, Class<T> dstClz) {
-        if (CollectionUtils.isEmpty(srcList)) return null;
+        if (CollectionUtils.isEmpty(srcList)) return new ArrayList<>();
 
         List<T> dstList = new ArrayList<>();
         for (Object src : srcList) {
